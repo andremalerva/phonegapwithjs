@@ -63,14 +63,14 @@ function openBrowser() {
    var options = "location=no,toolbar=no"
    var ref = cordova.InAppBrowser.open(url, target, options);
 
-   ref.addEventListener('loadstart', loadstartCallback);
+   //ref.addEventListener('loadstart', loadstartCallback);
    ref.addEventListener('loadstop', loadstopCallback);
    ref.addEventListener('loadloaderror', loaderrorCallback);
    ref.addEventListener('exit', exitCallback);
 
-   function loadstartCallback(event) {
+   /*function loadstartCallback(event) {
      window.plugins.spinnerDialog.show();
-   }
+   }*/
 
    function loadstopCallback(event) {
       window.plugins.spinnerDialog.hide();
