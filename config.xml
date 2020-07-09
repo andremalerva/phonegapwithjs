@@ -1,12 +1,70 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.example.hello" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>PRUEBA</name>
+    <name>OCCUS</name>
     <description>
-        Discover trending events in Denmark
+        VERSIÓN DE PRUEBA OCCUS
     </description>
-    <author email="prueba@gmail.com" href="https://www.occus.mx/">
-        DustHQ
+    <author email="blanca.malerva@gmail.com" href="https://www.occus.mx/">
+        BlancaMalerva
     </author>
+      <icon src="res/icon/ios/icon-57.png" gap:platform="ios" width="57" height="57"/>
+   <icon src="res/icon/ios/icon-57@2x.png" gap:platform="ios" width="114" height="114"/>
+   <icon src="res/icon/ios/icon-72.png" gap:platform="ios" width="72" height="72"/>
+   
+   <!-- iPhone 6 / 6+ -->
+   <icon src="res/icon/ios/icon-60@3x.png" gap:platform="ios" width="180" height="180" />
+
+   <!-- iPhone / iPod Touch  -->
+   <icon src="res/icon/ios/icon-60.png" gap:platform="ios" width="60" height="60" />
+   <icon src="res/icon/ios/icon-60@2x.png" gap:platform="ios" width="120" height="120" />
+
+   <!-- iPad -->
+   <icon src="res/icon/ios/icon-76.png" gap:platform="ios" width="76" height="76" />
+   <icon src="res/icon/ios/icon-76@2x.png" gap:platform="ios" width="152" height="152" />
+
+   <!-- Settings Icon -->
+   <icon src="res/icon/ios/icon-small.png" gap:platform="ios" width="29" height="29" />
+   <icon src="res/icon/ios/icon-small@2x.png" gap:platform="ios" width="58" height="58" />
+
+   <!-- Spotlight Icon -->
+   <icon src="res/icon/ios/icon-40.png" gap:platform="ios" width="40" height="40" />
+   <icon src="res/icon/ios/icon-40@2x.png" gap:platform="ios" width="80" height="80" />
+
+    
+   <!-- retina iPad support: PhoneGap 2.5.0+ only -->
+   <icon src="res/icon/ios/cgch.png" gap:platform="ios" width="144" height="144" />
+
+
+   
+   <gap:splash src="splash.png"/>
+   
+   <gap:splash src="res/screen/ios/320x480.png" gap:platform="ios" width="320"  height="480"  />
+   <gap:splash src="res/screen/ios/640x960.png" gap:platform="ios" width="640"  height="960"  />
+   <gap:splash src="res/screen/ios/640x1136.png" gap:platform="ios" width="640"  height="1136" />
+   <!--<gap:splash src="img/ios/cgch-1024.png" gap:platform="ios" width="1024" height="748"  />-->
+   <gap:splash src="res/screen/ios/768x1004.png" gap:platform="ios" width="768"  height="1004" />
+   <!-- retina iPad -->
+   <!--<gap:splash src="img/ios/cgch-2048.png" gap:platform="ios" width="2048" height="1496" />-->
+   <gap:splash src="res/screen/ios/1536x2008.png" gap:platform="ios" width="1536" height="2008" />
+   
+   
+   <!--Andorid-->
+    <icon src="res/icon/android/icon-36-ldpi.png" gap:platform="android" gap:density="ldpi" />
+    <icon src="res/icon/android/icon-48-mdpi.png" gap:platform="android" gap:density="mdpi" />
+    <icon src="res/icon/android/icon-72-hdpi.png" gap:platform="android" gap:density="hdpi" />
+    <icon src="res/icon/android/icon-96-xhdpi.png" gap:platform="android" gap:density="xhdpi" />
+
+    <gap:splash src="res/screen/android/screen-hdpi-landscape.png" gap:platform="android" gap:qualifier="land-hdpi" />
+    <gap:splash src="res/screen/android/screen-hdpi-portrait.png" gap:platform="android" gap:qualifier="port-hdpi" />
+    <gap:splash src="res/screen/android/screen-ldpi-landscape.png" gap:platform="android" gap:qualifier="land-ldpi" />
+    <gap:splash src="res/screen/android/screen-ldpi-portrait.png" gap:platform="android" gap:qualifier="port-ldpi" />
+    <gap:splash src="res/screen/android/screen-mdpi-landscape.png" gap:platform="android" gap:qualifier="land-mdpi" />
+    <gap:splash src="res/screen/android/screen-mdpi-portrait.png" gap:platform="android" gap:qualifier="port-mdpi" />
+    <gap:splash src="res/screen/android/screen-xhdpi-landscape.png" gap:platform="android" gap:qualifier="land-xhdpi" />
+    <gap:splash src="res/screen/android/screen-xhdpi-portrait.png" gap:platform="android" gap:qualifier="port-xhdpi" />
+   <!--Fin Android--> 
+   
+   <icon src="icon.png" />
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
