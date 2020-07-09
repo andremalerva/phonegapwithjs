@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.example.hello" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>DenEvents</name>
+    <name>PRUEBA</name>
     <description>
         Discover trending events in Denmark
     </description>
-    <author email="nioperas06@gmail.com" href="http://dusthq.com">
+    <author email="prueba@gmail.com" href="https://www.occus.mx/">
         DustHQ
     </author>
     <content src="index.html" />
