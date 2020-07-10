@@ -63,26 +63,22 @@ function openBrowser() {
    var options = "location=no,toolbar=no"
    var ref = cordova.InAppBrowser.open(url, target, options);
 
-   /*ref.addEventListener('loadstart', loadstartCallback);*/
-   ref.addEventListener("loadstart", function () {
+   ref.addEventListener('loadstart', loadstartCallback);
+   /*ref.addEventListener("loadstart", function () {
         ref.executeScript(
            // { code: "document.body.style.backgroundColor = 'yellow';" },
               { code: "document.body.style.background = 'url(splash.png)';" },
-                // url("paper.gif");
-           function (values) {
-                //alert(values[0]);
-            }
         );
-    });
+    });*/
    ref.addEventListener('loadstop', loadstopCallback);
    ref.addEventListener('loadloaderror', loaderrorCallback);
    ref.addEventListener('exit', exitCallback);
 
 
 
-   /*function loadstartCallback(event) {
-     window.plugins.spinnerDialog.show();
-   }*/
+   function loadstartCallback(event) {
+     //window.plugins.spinnerDialog.show();
+   }
 
    function loadstopCallback(event) {
       window.plugins.spinnerDialog.hide();
