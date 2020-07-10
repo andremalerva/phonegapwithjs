@@ -24,6 +24,9 @@
     },
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.example.occus"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.example.occus"
     }
   },
   "dependent_plugins": {}

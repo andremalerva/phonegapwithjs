@@ -23,6 +23,8 @@
 		1C1D222CED374215B1827AB3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43B17A5018204AB5AB09182D /* SystemConfiguration.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		113F6D3B4C56405D9DAF7D72 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8720C519514413FBC23B653 /* CoreTelephony.framework */; };
 		6E7FD460A6B643F1989609CE /* CDVSpinnerDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D76E76E84144E64AB9DFDC2 /* CDVSpinnerDialog.m */; };
+		9F5E698381494124ADB3A014 /* CDVSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = F6AA7B94FE77421286CFBE81 /* CDVSplashScreen.m */; };
+		E772DBCA4DCE4865806DD801 /* CDVViewController+SplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B35B79883A940C1975705ED /* CDVViewController+SplashScreen.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,10 @@
 		B8720C519514413FBC23B653 /* CoreTelephony.framework */ = {isa = PBXFileReference; name = "CoreTelephony.framework"; path = "System/Library/Frameworks/CoreTelephony.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		6D76E76E84144E64AB9DFDC2 /* CDVSpinnerDialog.m */ = {isa = PBXFileReference; name = "CDVSpinnerDialog.m"; path = "cordova-plugin-spinner-dialog/CDVSpinnerDialog.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		5042CDF20A96485EB377F60A /* CDVSpinnerDialog.h */ = {isa = PBXFileReference; name = "CDVSpinnerDialog.h"; path = "cordova-plugin-spinner-dialog/CDVSpinnerDialog.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		F6AA7B94FE77421286CFBE81 /* CDVSplashScreen.m */ = {isa = PBXFileReference; name = "CDVSplashScreen.m"; path = "cordova-plugin-splashscreen/CDVSplashScreen.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		5B35B79883A940C1975705ED /* CDVViewController+SplashScreen.m */ = {isa = PBXFileReference; name = "CDVViewController+SplashScreen.m"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		EE4B34326C114281B79C8E7C /* CDVSplashScreen.h */ = {isa = PBXFileReference; name = "CDVSplashScreen.h"; path = "cordova-plugin-splashscreen/CDVSplashScreen.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		A17CD9DBAAA84F868E7879F5 /* CDVViewController+SplashScreen.h */ = {isa = PBXFileReference; name = "CDVViewController+SplashScreen.h"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +198,10 @@
 				C940A2B40CF04B469D9FC20D /* CDVReachability.h */,
 				6D76E76E84144E64AB9DFDC2 /* CDVSpinnerDialog.m */,
 				5042CDF20A96485EB377F60A /* CDVSpinnerDialog.h */,
+				F6AA7B94FE77421286CFBE81 /* CDVSplashScreen.m */,
+				5B35B79883A940C1975705ED /* CDVViewController+SplashScreen.m */,
+				EE4B34326C114281B79C8E7C /* CDVSplashScreen.h */,
+				A17CD9DBAAA84F868E7879F5 /* CDVViewController+SplashScreen.h */,
 			);
 			name = Plugins;
 			path = "OCCUS/Plugins";
@@ -309,6 +319,8 @@
 				CF1D74EFA157420AA88EB205 /* CDVConnection.m in Sources */,
 				1EFA77390101483D93A7D6BB /* CDVReachability.m in Sources */,
 				6E7FD460A6B643F1989609CE /* CDVSpinnerDialog.m in Sources */,
+				9F5E698381494124ADB3A014 /* CDVSplashScreen.m in Sources */,
+				E772DBCA4DCE4865806DD801 /* CDVViewController+SplashScreen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
