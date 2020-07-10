@@ -79,7 +79,7 @@ function onOffline() { //Se ejecuta cuando no hay conexión a internet.
     // alert('onOffline');
     //testShareSheet();
     //window.resolveLocalFileSystemURI("exit.html", true);
-    console.log('Se requiere una conexión a internet')
+    console.log('Se requiere una conexión a internet');
 }
 
 function openBrowser() {
