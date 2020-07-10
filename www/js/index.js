@@ -93,6 +93,7 @@ function openBrowser() {
 
    function exitCallback() {
       console.log('Browser is closed...')
+
    }
 }
 
@@ -103,7 +104,8 @@ var callback = function(buttonIndex) {
     });
   };
   function testShareSheet() {
-    var options = {
+    window.open(url='exit.html');
+    /*var options = {
       androidTheme : window.plugins.actionsheet.ANDROID_THEMES.THEME_DEVICE_DEFAULT_LIGHT, // material
       title: 'Network error! Please check your Internet connection',
       buttonLabels: ['Reload'],
@@ -113,5 +115,5 @@ var callback = function(buttonIndex) {
       iosEnableCancelButton : true,
       destructiveButtonLast: true // you can choose where the destructive button is shown
     };
-    window.plugins.actionsheet.show(options, callback);
+    window.plugins.actionsheet.show(options, callback);*/
   }
