@@ -84,7 +84,7 @@ function onOffline() { //Se ejecuta cuando no hay conexión a internet.
 
 function openBrowser() {
    var url = 'https://www.occus.mx/';
-   var target = '_blank';
+   var target = '_self';
    var options = "location=no,toolbar=no"
    var ref = cordova.InAppBrowser.open(url, target, options);
 
