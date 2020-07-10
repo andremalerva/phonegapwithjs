@@ -69,7 +69,7 @@ function openBrowser() {
    ref.addEventListener('exit', exitCallback);
 
    function loadstartCallback(event) {
-     window.plugins.spinnerDialog.show();
+     /*window.plugins.spinnerDialog.show();*/
    }
 
    function loadstopCallback(event) {
