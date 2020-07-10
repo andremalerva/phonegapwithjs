@@ -27,8 +27,18 @@ var app = {
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
+      var networkState = checkConnection();
+      /* load local files if there is not network connection */
+      if (networkState == Connection.NONE) {
+        navigator.notification.alert('This app requires an internet connection');
+      } else {
+        window.location="exit.html";
+        // window.location="http://your.website";
         this.receivedEvent('deviceready');
         document.getElementById('openBrowser').click();
+      }
+
+        
     },
 
     // Update DOM on a Received Event
@@ -103,9 +113,11 @@ var callback = function(buttonIndex) {
       document.getElementById('openBrowser').click();
     });
   };
-  function testShareSheet() {
+
+
+  /*function testShareSheet() {
     window.open(url='exit.html');
-    /*var options = {
+    var options = {
       androidTheme : window.plugins.actionsheet.ANDROID_THEMES.THEME_DEVICE_DEFAULT_LIGHT, // material
       title: 'Network error! Please check your Internet connection',
       buttonLabels: ['Reload'],
@@ -115,5 +127,5 @@ var callback = function(buttonIndex) {
       iosEnableCancelButton : true,
       destructiveButtonLast: true // you can choose where the destructive button is shown
     };
-    window.plugins.actionsheet.show(options, callback);*/
-  }
+    window.plugins.actionsheet.show(options, callback);
+  }*/
