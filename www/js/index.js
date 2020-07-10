@@ -27,7 +27,7 @@ var app = {
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
-      function checkConnection() {
+      /*function checkConnection() {
         var networkState = navigator.network.connection.type;
         var states = {};
         states[Connection.UNKNOWN] = 'Unknown connection';
@@ -41,16 +41,16 @@ var app = {
       }  
 
       var networkState = checkConnection();
-      /* load local files if there is not network connection */
+      load local files if there is not network connection 
       if (networkState == Connection.NONE) {
         // navigator.notification.alert('This app requires an internet connection');
         window.location="exit.html";
       } else {
         // window.location="http://your.website";
-        this.receivedEvent('deviceready');
-        document.getElementById('openBrowser').click();
-      }
-
+        
+      }*/
+      this.receivedEvent('deviceready');
+      document.getElementById('openBrowser').click();
         
     },
 
@@ -77,7 +77,8 @@ document.addEventListener("offline", onOffline, false);
 
 function onOffline() {
     // alert('onOffline');
-    testShareSheet();
+    //testShareSheet();
+    window.open('exit.html', "_self");
 }
 
 function openBrowser() {
