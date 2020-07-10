@@ -24,7 +24,7 @@
     <splash src="res/screen/android/screen-mdpi-portrait.png" platform="android" qualifier="port-mdpi" />
     <splash src="res/screen/android/screen-xhdpi-landscape.png" platform="android" qualifier="land-xhdpi" />
     <splash src="res/screen/android/screen-xhdpi-portrait.png" platform="android" qualifier="port-xhdpi" />
-
+    <preference name="AutoHideSplashScreen" value="true" />
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
