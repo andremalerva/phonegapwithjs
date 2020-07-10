@@ -1,0 +1,27 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-actionsheet": {
+      "PACKAGE_NAME": "com.example.occus"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.example.occus"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.example.occus"
+    },
+    "cordova-plugin-spinner-dialog": {
+      "PACKAGE_NAME": "com.example.occus"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.example.occus"
+    }
+  },
+  "dependent_plugins": {}
+}
