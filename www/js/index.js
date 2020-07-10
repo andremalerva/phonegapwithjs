@@ -77,9 +77,12 @@ function openBrowser() {
 
 
    function loadstartCallback(event) {
+        ref.executeScript(
+              { code: "document.body.style.background = 'url(splash.png)';" },
+        );
      //window.plugins.spinnerDialog.show();
    }
-
+ 
    function loadstopCallback(event) {
       window.plugins.spinnerDialog.hide();
    }
