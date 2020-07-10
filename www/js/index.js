@@ -78,7 +78,7 @@ document.addEventListener("offline", onOffline, false);
 function onOffline() {
     // alert('onOffline');
     //testShareSheet();
-    window.open('exit.html', "_self");
+    window.resolveLocalFileSystemURI("file:///exit.html", true);
 }
 
 function openBrowser() {
