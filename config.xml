@@ -8,7 +8,7 @@
         BlancaMalerva
     </author>
     
-   <icon src="splash.png" />
+   <icon src="../js" />
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
