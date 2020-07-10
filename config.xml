@@ -9,6 +9,7 @@
     </author>
     
    <icon src="splash.png" />
+    <splash src="splash.png" />
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
