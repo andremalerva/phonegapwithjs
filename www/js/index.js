@@ -39,13 +39,14 @@ var app = {
         states[Connection.NONE] = 'No network connection';
         return networkState;
       }  
-      
+
       var networkState = checkConnection();
       /* load local files if there is not network connection */
       if (networkState == Connection.NONE) {
         navigator.notification.alert('This app requires an internet connection');
+        //window.location="exit.html";
       } else {
-        window.location="exit.html";
+       
         // window.location="http://your.website";
         this.receivedEvent('deviceready');
         document.getElementById('openBrowser').click();
