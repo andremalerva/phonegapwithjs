@@ -49,7 +49,136 @@
         <script type="text/javascript">
             navigator.splashscreen.show(); 
         </script> --->
+        <script type="text/javascript">
+        var app = {
+    // Application Constructor
+    initialize: function() {
+        document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
+    },
+
+    // deviceready Event Handler
+    //
+    // Bind any cordova events here. Common events are:
+    // 'pause', 'resume', etc.
+    onDeviceReady: function() {
+      /*function checkConnection() {
+        var networkState = navigator.network.connection.type;
+        var states = {};
+        states[Connection.UNKNOWN] = 'Unknown connection';
+        states[Connection.ETHERNET] = 'Ethernet connection';
+        states[Connection.WIFI] = 'WiFi connection';
+        states[Connection.CELL_2G] = 'Cell 2G connection';
+        states[Connection.CELL_3G] = 'Cell 3G connection';
+        states[Connection.CELL_4G] = 'Cell 4G connection';
+        states[Connection.NONE] = 'No network connection';
+        return networkState;
+      }  
+      var networkState = checkConnection();
+      load local files if there is not network connection 
+      if (networkState == Connection.NONE) {
+        // navigator.notification.alert('This app requires an internet connection');
+        window.location="exit.html";
+      } else {
+        // window.location="http://your.website";
+        
+      }*/
+      this.receivedEvent('deviceready');
+      document.getElementById('openBrowser').click();
+        
+    },
+
+    // Update DOM on a Received Event
+    receivedEvent: function(id) {
+        var parentElement = document.getElementById(id);
+        var listeningElement = parentElement.querySelector('.listening');
+        var receivedElement = parentElement.querySelector('.received');
+
+        listeningElement.setAttribute('style', 'display:none;');
+        receivedElement.setAttribute('style', 'display:block;');
+
+        console.log('Received Event: ' + id);
+    }
+};
+
+app.initialize();
+
+
+
+document.getElementById("openBrowser").addEventListener("click", openBrowser);
+
+document.addEventListener("offline", onOffline, false);
+
+function onOffline() { //Se ejecuta cuando no hay conexión a internet.
+    // alert('onOffline');
+    //testShareSheet();
+    //window.resolveLocalFileSystemURI("exit.html", true);
+    console.log('Se requiere una conexión a internet');
+}
+
+function openBrowser() {
+   var url = 'https://www.occus.mx/';
+   var target = '_self';
+   var options = "location=no,toolbar=no"
+   var ref = cordova.InAppBrowser.open(url, target, options);
+
+   ref.addEventListener('loadstart', loadstartCallback);
+   /*ref.addEventListener("loadstart", function () {
+        ref.executeScript(
+           // { code: "document.body.style.backgroundColor = 'yellow';" },
+              { code: "document.body.style.background = 'url(splash.png)';" },
+        );
+    });*/
+   ref.addEventListener('loadstop', loadstopCallback);
+   ref.addEventListener('loadloaderror', loaderrorCallback);
+   ref.addEventListener('exit', exitCallback);
+
+
+
+   function loadstartCallback(event) {
+        ref.executeScript(
+              { code: "document.body.style.background = 'url(splash.png)';" },
+        );
+     //window.plugins.spinnerDialog.show();
+   }
+ 
+   function loadstopCallback(event) {
+      window.plugins.spinnerDialog.hide();
+   }
+
+   function loaderrorCallback(error) {
+      testShareSheet();
+   }
+
+   function exitCallback() {
+      console.log('Browser is closed...')
+
+   }
+}
+
+
+var callback = function(buttonIndex) {
+    setTimeout(function() {
+      document.getElementById('openBrowser').click();
+    });
+  };
+
+
+  /*function testShareSheet() {
+    window.open(url='exit.html');
+    var options = {
+      androidTheme : window.plugins.actionsheet.ANDROID_THEMES.THEME_DEVICE_DEFAULT_LIGHT, // material
+      title: 'Network error! Please check your Internet connection',
+      buttonLabels: ['Reload'],
+      addCancelButtonWithLabel: 'Cancel',
+      androidEnableCancelButton : true,
+      winphoneEnableCancelButton : true,
+      iosEnableCancelButton : true,
+      destructiveButtonLast: true // you can choose where the destructive button is shown
+    };
+    window.plugins.actionsheet.show(options, callback);
+  }*/
+        </script>
         <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript" src="cordova.js"></script>
+        <!---<script type="text/javascript" src="cordova.js"></script>--->
     </body>
 </html>
